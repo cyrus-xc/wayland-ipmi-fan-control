@@ -1,0 +1,20 @@
+[Unit]
+Description=Gigabyte local IPMI thermal fan controller
+After=systemd-modules-load.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /usr/local/lib/gigabyte-fan-control/ipmi_daemon.py
+RuntimeDirectory=gigabyte-fan-control
+StateDirectory=gigabyte-fan-control
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=25
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

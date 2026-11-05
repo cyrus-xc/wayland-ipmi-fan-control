@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+ <rect x="4" y="4" width="120" height="120" rx="28" fill="#182231"/>
+ <circle cx="64" cy="64" r="48" fill="none" stroke="#385169" stroke-width="5"/>
+ <g fill="#52d6bb">
+  <path id="blade" d="M60 55 C41 44 39 22 57 17 C77 11 90 35 74 56 C70 61 65 59 60 55Z"/>
+  <use href="#blade" transform="rotate(120 64 64)"/>
+  <use href="#blade" transform="rotate(240 64 64)"/>
+ </g>
+ <circle cx="64" cy="64" r="13" fill="#a8f4df" stroke="#182231" stroke-width="5"/>
+</svg>
